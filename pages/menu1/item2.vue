@@ -7,6 +7,8 @@
       <h2>菜单一 - 子菜单 1-2</h2>
       <p>这是菜单一下的第二个子菜单页面。</p>
       <p>演示 Nuxt 路由功能。</p>
+    <button @click="count++">Add 1</button>
+    <p>Count is: {{ count }}</p>
     </div>
   </div>
 </template>
@@ -15,6 +17,8 @@
 useHead({
   title: '子菜单 1-2'
 })
+const count = ref(0)
+
 </script>
 
 <style scoped>
